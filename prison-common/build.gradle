@@ -1,6 +1,6 @@
-group 'tech.mcprison'
-
-apply plugin: 'java'
+plugins {
+    id 'java'
+}
 
 sourceCompatibility = 1.8
 
@@ -9,6 +9,5 @@ repositories {
 }
 
 dependencies {
-    compile project(':prison-core')
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
