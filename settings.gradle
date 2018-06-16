@@ -17,4 +17,7 @@
  */
 
 rootProject.name = 'prison'
+include 'prison-common'
+include 'prison-mines'
+include 'prison-spigot'
 
