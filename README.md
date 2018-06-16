@@ -1,4 +1,4 @@
-![Prison Banner](https://faizaand.me/prison/img/prison-banner.png)
+![Prison Banner](https://faizaand.github.io/prison/img/prison-banner.png)
 
 [![License](https://img.shields.io/badge/license-GPL%20License%20v3-blue.svg)](LICENSE.md)
 [![Build Status](https://travis-ci.org/MC-Prison/Prison.svg?branch=master)](https://travis-ci.org/MC-Prison/Prison)
