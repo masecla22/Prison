@@ -1,0 +1,3 @@
+name: Prison
+version: "${version}"
+main: prison.spigot.PrisonSpigot
