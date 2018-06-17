@@ -1,5 +1,7 @@
 package prison;
 
+import prison.data.DataManager;
+import prison.data.Database;
 import prison.game.GameServer;
 import prison.game.PlayerManager;
 
@@ -17,12 +19,20 @@ public class Prison {
     private static Prison instance;
 
     private Platform platform;
+    private DataManager dataManager;
 
     public void init(Platform platform) {
         instance = this;
         this.platform = platform;
 
+        initData();
+
         logger().info("Enabled Prison v" + VERSION + ", running on " + getServer().getVersion() + " (" + getServer().getWorldList().size() + " worlds).");
+    }
+
+    private void initData() {
+        Database db = getPlatform().getDatabaseSupplier().get();
+        this.dataManager = new DataManager(db);
     }
 
     public static Prison get() {

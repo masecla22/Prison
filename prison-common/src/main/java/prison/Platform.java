@@ -1,5 +1,6 @@
 package prison;
 
+import prison.data.Database;
 import prison.game.GameServer;
 import prison.game.PlayerManager;
 
@@ -18,6 +19,7 @@ public class Platform {
     private Supplier<Logger> loggerSupplier;
     private Supplier<GameServer> serverSupplier;
     private Supplier<PlayerManager> playerSupplier;
+    private Supplier<Database> databaseSupplier;
 
     public Platform(String platformName, String platformVersion) {
         this.platformName = platformName;
@@ -56,4 +58,11 @@ public class Platform {
         this.playerSupplier = playerSupplier;
     }
 
+    public Supplier<Database> getDatabaseSupplier() {
+        return databaseSupplier;
+    }
+
+    public void setDatabaseSupplier(Supplier<Database> databaseSupplier) {
+        this.databaseSupplier = databaseSupplier;
+    }
 }
