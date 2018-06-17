@@ -24,9 +24,9 @@ public class PrisonSpigot extends JavaPlugin {
 
     private void initPlatform() {
         this.platform = new Platform("Spigot", Bukkit.getVersion());
-        this.platform.setLoggerSupplier(Bukkit::getLogger);
-        this.platform.setServerSupplier(SpigotServer::new);
-        this.platform.setPlayerManagerSupplier(SpigotPlayerManager::new);
+        this.platform.supplyLogger(Bukkit::getLogger);
+        this.platform.supplyServer(SpigotServer::new);
+        this.platform.supplyPlayerManager(SpigotPlayerManager::new);
     }
 
 }

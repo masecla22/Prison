@@ -31,7 +31,7 @@ public class Prison {
     }
 
     private void initData() {
-        Database db = getPlatform().getDatabaseSupplier().get();
+        Database db = getPlatform().database().get();
         this.dataManager = new DataManager(db);
     }
 
@@ -44,15 +44,15 @@ public class Prison {
     }
 
     public Logger logger() {
-        return platform.getLoggerSupplier().get();
+        return platform.logger().get();
     }
 
     public GameServer getServer() {
-        return platform.getServerSupplier().get();
+        return platform.server().get();
     }
 
     public PlayerManager getPlayerManager() {
-        return platform.getPlayerManagerSupplier().get();
+        return platform.playerManager().get();
     }
 
 }

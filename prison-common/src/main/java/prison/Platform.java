@@ -34,35 +34,35 @@ public class Platform {
         return platformVersion;
     }
 
-    public Supplier<Logger> getLoggerSupplier() {
+    public Supplier<Logger> logger() {
         return loggerSupplier;
     }
 
-    public void setLoggerSupplier(Supplier<Logger> loggerSupplier) {
+    public void supplyLogger(Supplier<Logger> loggerSupplier) {
         this.loggerSupplier = loggerSupplier;
     }
 
-    public Supplier<GameServer> getServerSupplier() {
+    public Supplier<GameServer> server() {
         return serverSupplier;
     }
 
-    public void setServerSupplier(Supplier<GameServer> serverSupplier) {
+    public void supplyServer(Supplier<GameServer> serverSupplier) {
         this.serverSupplier = serverSupplier;
     }
 
-    public Supplier<PlayerManager> getPlayerManagerSupplier() {
+    public Supplier<PlayerManager> playerManager() {
         return playerSupplier;
     }
 
-    public void setPlayerManagerSupplier(Supplier<PlayerManager> playerSupplier) {
+    public void supplyPlayerManager(Supplier<PlayerManager> playerSupplier) {
         this.playerSupplier = playerSupplier;
     }
 
-    public Supplier<Database> getDatabaseSupplier() {
+    public Supplier<Database> database() {
         return databaseSupplier;
     }
 
-    public void setDatabaseSupplier(Supplier<Database> databaseSupplier) {
+    public void supplyDatabase(Supplier<Database> databaseSupplier) {
         this.databaseSupplier = databaseSupplier;
     }
 }
